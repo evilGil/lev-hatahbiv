@@ -1,0 +1,17 @@
+@import '../../../../styles';
+
+.item-row{
+    border-bottom-style: inset;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+}
+.color-rect{
+    width: 30px;
+    border-style: solid;
+    height: 15px;
+    border-color: gray;
+    display: inline-block;
+}
+.color-name{
+    display: inline;
+}

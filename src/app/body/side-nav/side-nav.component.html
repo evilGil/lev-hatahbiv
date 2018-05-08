@@ -1,0 +1,19 @@
+<!--<div class="side-nav">
+  <div class="menu-list">
+    <ul id="menu-content" class="menu-content list-group">
+      <my-side-nav-item *ngFor="let section of sections" 
+                    [data]=section>
+      </my-side-nav-item>
+    </ul>
+  </div>
+</div>-->
+<div class="side-nav">
+  <div class="menu-list">
+    <accordion>
+      <my-side-nav-item *ngFor="let section of sections" 
+                    [data]=section>
+      </my-side-nav-item>
+    </accordion>
+  </div>
+</div>
+

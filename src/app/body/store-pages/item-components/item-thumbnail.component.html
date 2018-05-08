@@ -1,0 +1,22 @@
+<div class="box-product-outer my-thumbnail" dir="rtl">
+	<div class="box-product" (click)="onClick()">
+		<div class="img-wrapper">
+			<img alt={{data.name}} src="{{data.image}}">
+			<div class="tags">
+				<span *ngIf="data.onSale > 0" class="label-tags"><span class="label label-danger">מבצע</span></span>
+				<span *ngIf="data.isNew" class="label-tags"><span class="label label-info">חדש</span></span>
+			</div>
+			<div class="option">
+				<a (click)="addButtonClick(data, $event)" data-toggle="tooltip" data-placement="bottom" title="הוסף לעגלה"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+			</div>
+		</div>
+		<h6>{{data.name}}</h6>
+		<div class="price">
+			<div *ngIf="data.onSale > 0">
+				<div>{{finalPrice}}<span class="price-down">{{data.onSale}}%</span></div>
+				<span class="price-old">{{data.price.toFixed(2)}}</span>
+			</div>
+		</div>
+		<div *ngIf="data.onSale == 0">{{data.price.toFixed(2)}} שח</div>
+	</div>
+</div>

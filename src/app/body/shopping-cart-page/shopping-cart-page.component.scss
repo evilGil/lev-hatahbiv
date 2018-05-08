@@ -1,0 +1,33 @@
+@import '../../../styles';
+
+th {
+    text-align: right;
+}
+.my-shopping-cart-page {
+    margin: auto;
+}
+#sum-price{
+    font-size: 1.2em; 
+    background-color: lightgrey;
+}
+#buy-button{
+    width: 100%; 
+    font-size: large;
+}
+h1 {
+    color: $theme-header-color;
+}
+
+.no-items-message{
+    text-align: center;
+    margin-top: 55px;
+}
+
+.item-image{
+    max-width: 70px;
+    max-height: 56px;
+}
+
+.count-col{
+        width: 100px;
+}

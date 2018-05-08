@@ -1,0 +1,47 @@
+@import '../../../styles';
+.my-form {
+  background-color: $theme-light-color;
+  margin: 15px 0px;
+  padding: 10px 24px;
+}
+
+.right-form {
+  width: 48%;
+  float: right;
+}
+
+.left-form {
+  width: 48%;
+  float: left;
+}
+
+#message {
+  display: block;
+  border: currentColor;
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#my-submit {
+  clear: both;
+  text-align: left;
+}
+
+h3 {
+  color: $theme-header-color;
+}
+
+.contact-panel {
+  background-color: $theme-light-color;
+  padding: 2px 16px;
+  // margin-bottom: -99999px;
+  // padding-bottom: 99999px;
+  border-radius: 20px;
+}
+
+.row {
+  overflow: hidden;
+}
+

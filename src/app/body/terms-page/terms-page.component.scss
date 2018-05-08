@@ -1,0 +1,14 @@
+@import '../../../styles';
+
+.terms-list{
+    list-style: none;
+    background-color: $theme-light-color;
+    padding-top: 20px;
+    border-radius: 18px;
+}
+
+h2{
+    color: $theme-header-color;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

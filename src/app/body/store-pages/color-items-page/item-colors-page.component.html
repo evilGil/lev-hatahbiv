@@ -1,0 +1,28 @@
+<div class="item-colors-wrapper">
+	<div class="row">
+		<div class="col-sm-12">
+			<h3>{{itemName}}</h3>
+		</div>
+		<div class="row">
+			<div class="col-sm-9 items-wrapper">
+				<div class="row">
+					<div class="col-sm-3">
+					</div>
+					<div class="col-md-2 col-sm-3">
+						<h4>כמות</h4>
+					</div>
+					<div class="col-sm-3">
+						<h4>מחיר</h4>
+					</div>
+					<div class="col-sm-3">
+						<h4>צבע</h4>
+					</div>
+				</div>
+				<my-color-item *ngFor="let item of items" [data]=item></my-color-item>
+			</div>
+			<div class="col-sm-3">
+				<img src="{{image}}" alt="{{itemName}}" class="img-responsive">
+			</div>
+		</div>
+	</div>
+</div>

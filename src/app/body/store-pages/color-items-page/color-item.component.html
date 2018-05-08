@@ -1,0 +1,17 @@
+<div class="row item-row">
+	<div class="col-sm-3">
+		<button class="btn btn-primary btn-xs" (click)="onAddToCartClick()">הוסף לעגלה</button>
+	</div>
+	<div class="col-md-2 col-sm-3">
+		<my-minus-plus-button [min]=1 (valueChanged)="quantCanged(item, $event)"></my-minus-plus-button>
+	</div>
+	<div class="col-sm-3">
+		{{data.price}}
+	</div>
+	<div class="col-sm-3">
+		<h5 class="color-name">{{data.color}}</h5>
+		<div class="color-rect" [style.background]="data.colorRgb"> </div>
+	</div>
+</div>
+
+<my-add-to-cart-modal #addToCartModall></my-add-to-cart-modal>

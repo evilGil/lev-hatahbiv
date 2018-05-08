@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+$theme-background-color: white;
+
+$theme-text-color: black;
+$theme-header-color: #7b3492;
+$theme-main-color: #7b3492;
+$theme-light-color: #efe0f4;
+$theme-main-border-color: #68247e;
+$theme-dark-color: #602a72;
+
+// *{
+//     margin: 0;
+//     padding: 0;
+// }
+
+body{
+    text-align: right;
+    font-size: 1em;
+    direction: rtl;
+    padding-top: 147px;
+}
+
+h2{
+    color: $theme-header-color;
+}
+
+.my-line-brake{
+    height: 1px;
+    background-color: $theme-main-color;
+    margin-top: 12px;
+}
+
+// Bootstrap custom styling
+
+.btn-primary{
+    background-color: $theme-main-color;
+    border-color: $theme-dark-color;
+}
+
+.btn-primary:active{
+    background:$theme-dark-color;
+    border-color: $theme-dark-color;
+}
+
+.nav>li>a, .nav>li>a{
+    background-color: $theme-light-color;
+    color: $theme-main-color;
+    border-radius: 0px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: $theme-main-color;
+    color: white;
+    border-radius: 0px;
+}
+
+.dropdown-menu{
+    text-align: right;
+}

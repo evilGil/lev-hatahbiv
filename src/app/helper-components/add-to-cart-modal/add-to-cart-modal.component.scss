@@ -1,0 +1,20 @@
+@import '../../../styles';
+
+    .modal-title{
+        text-align: center;
+        color:$theme-header-color;
+    }
+    .modal-body img{width: 100%;}
+    #itemModal{width: 450px;}
+
+    .modal-footer {
+        text-align: center;
+    }
+    .modal-header {
+        color: blueviolet;
+        text-align: center;
+    }
+    
+    .add-to-cart-modal-body {
+        text-align: center;
+    }

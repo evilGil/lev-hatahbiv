@@ -1,0 +1,10 @@
+<div>
+  <h1>חוגים</h1>
+  <p>בואו להעשיר את יכולות האומנות שלכם. החנות מקיימת חוגים מגוונים אשר מתרחשים בחדר הלימוד הצמוד לחנות. את חוגים מעבירים מורים ואמנים מהשורה הראשונה. <br>טלפון לפרטים : 08-9315213.</p>
+</div>
+
+<ul class="classes-list">
+  <li *ngFor="let banerInfo of classBanersInfo">
+    <my-class-banner [classInfo]="banerInfo"></my-class-banner>
+  </li>
+</ul>

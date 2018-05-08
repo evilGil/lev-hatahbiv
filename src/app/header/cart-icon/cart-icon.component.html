@@ -1,3 +1,8 @@
-<p>
-  cart-icon works!
-</p>
+<div class="cart-icon-outer-box" (click)="onClick()">
+  <div class="cart-icon pull-right">
+    <span class="glyphicon glyphicon-shopping-cart " aria-hidden="true"></span>
+  </div>
+  <div data-toggle="dropdown" data-loading-text="Loading..." class="pull-right dropdown-toggle cart-drop-down"> 
+      <h4>עגלת קניות</h4><a> <span id="cart-total"> {{shoppingCartData.itemsCount}} מוצרים - {{shoppingCartData.sum.toFixed(2)}} ש"ח</span></a>
+  </div>
+</div >  

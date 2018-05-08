@@ -1,0 +1,21 @@
+<div class="side-nav-item">
+	<li *ngIf="data.link.length > 0" class="list-group-item">
+		<a [routerLink]="[data.link]">{{data.name}}</a>
+	</li>
+	<div *ngIf="data.sections.length > 0" class="panel panel-default" [ngClass]="panelClass">
+		<div class="panel-heading" (click)="toggle()">{{data.name}}</div>
+		<div class="panel-body" [ngClass]="{hide: !isOpen}">
+			<my-side-nav-item *ngFor="let section of data.sections" [data]=section>
+			</my-side-nav-item>
+		</div>
+	</div>
+</div>
+<!--
+<accordion-group *ngIf="data.sections.length > 0"
+  [isOpen]="isOpen"
+  heading="{{data.name}}">
+      <my-side-nav-item *ngFor="let section of data.sections" 
+                    [data]=section>
+      </my-side-nav-item>
+</accordion-group>
+</div>-->

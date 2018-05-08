@@ -1,0 +1,34 @@
+@import '../../../styles';
+
+  .side-sub-menu{margin: -1px 0px;}
+  .collapse-sub-menu{padding-right: 10px;}
+  .list-group-item {
+    padding: 5px 15px; 
+    border: none;
+      background-color: $theme-light-color;
+      color: $theme-main-color;
+      border-radius: 0;
+    }
+  .hide {
+      display: none;
+    }
+    .panel-heading{
+      background-color: $theme-main-color;
+      color: white;
+      border-radius: 0;
+      cursor: pointer;
+    }
+    .panel-body{
+      background-color: $theme-light-color;
+      padding: 0px 15px 0px 0px;
+    }
+
+    a{
+      color: $theme-main-color;
+      text-decoration: none;  
+    }
+    // .panel-heading:hover, .panel-heading:focus{
+    //   background-color: $theme-main-color;
+    //   color: white;
+    //   border-radius: 0;
+    // }

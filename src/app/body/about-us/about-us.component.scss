@@ -1,0 +1,15 @@
+@import '../../../styles';
+
+.text-wrapper{
+    background-color: $theme-light-color;
+    padding: 10px;
+    border-radius: 11px;
+}
+
+.header{
+    margin-top: 0px; 
+}
+
+h3{
+    color: $theme-header-color;
+}

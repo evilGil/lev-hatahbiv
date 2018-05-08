@@ -1,0 +1,12 @@
+<my-spinner *ngIf="spinnerOn"></my-spinner>
+<div *ngIf="!spinnerOn">
+	<div class="row" (window:resize)="onResize($event)">
+		<div *ngFor="let item of items; let i = index">
+			<div class="clearfix" *ngIf="(i % 4 == 0) && (windowWidth > 991)"></div>
+			<div class="clearfix" *ngIf="(i % 2 == 0) && (windowWidth < 992)"></div>
+			<my-item-thumbnail class="col-md-3 col-sm-6" (clicked)="openItemColorsPage(item)" (addToCartclicked)="openItemColorsPage(item)"
+				[data]=item>
+			</my-item-thumbnail>
+		</div>
+	</div>
+</div>

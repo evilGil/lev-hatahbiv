@@ -1,0 +1,22 @@
+@import '../../styles';
+
+  .header-wrapper{
+    position: fixed;
+    background-color: $theme-background-color;
+    z-index: 100;
+    top: 0px;
+  }
+  .logo{width: 200px; margin-right: 25px;}
+  #my-cart-box{font-size: 4em;
+    position: absolute;
+    top: 20%;
+    left:10%;
+    height: 60%;
+    border-style: double;
+    padding: 10px;}
+  #my-header{position: relative;}
+  a:hover{text-decoration: none; cursor:pointer}
+
+#my-top-nav{
+    margin-bottom: 15px;
+}

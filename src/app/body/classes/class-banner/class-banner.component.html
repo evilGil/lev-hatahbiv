@@ -1,0 +1,18 @@
+<div class="class-banner">
+  <div class="main-info">
+      <h3>{{classInfo.name}}</h3>
+      <br/>
+      <h4>{{classInfo.phone}}</h4>
+  </div>
+  <div class="images">
+      <img src="{{classInfo.images[0]}}" alt="pic"/>
+  </div>
+  <div class="bullets">
+    <ul *ngFor="let bullet of classInfo.bullets">
+      <li><b>{{bullet.header}}</b> - {{bullet.data}}</li>
+    </ul>
+  </div>
+  <div class="footer">
+    <p>{{classInfo.footer}}</p>
+  </div>
+</div>
